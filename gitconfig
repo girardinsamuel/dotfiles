@@ -1,22 +1,33 @@
 [user]
 	name = Samuel Girardin
 	email = samuelgirardin@pm.me
+[github]
+	user = girardinsamuel
 [alias]
 	l = log --oneline
-	s = status
+	ll = log -p
+	s = status -sb
 	cm = commit -m
 	co = checkout
-	br = branch
+	br = branch -vv
+	bra = branch -vv --all
 	last = log -1 HEAD
 	mend = commit --amend --no-edit
 	a = add .
+	di = diff
 	db = branch -D
 	nb = checkout -b
 	psu = push --set-upstream origin
 	stashes = stash list
+	versions = tag -l --sort=version:refname
+	pullrb = pull --rebase
+	ff = merge --ff-only
+	noff = merge --no-ff
+	f = fetch --tags --prune
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -33,3 +44,9 @@
 	whitespace = red reverse
 [pull]
 	rebase = false
+[push]
+	default = upstream
+[grep]
+	lineNumber = true
+[log]
+	date = auto:human

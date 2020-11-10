@@ -1,1 +1,5 @@
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# External settings
+source ~/.shell/external.sh
+
+# Aliases
+source ~/.shell/aliases.sh
