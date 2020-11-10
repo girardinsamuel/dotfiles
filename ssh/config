@@ -1,0 +1,25 @@
+Host 192.168.1.13
+    ForwardAgent yes
+
+Host raspberrypi
+    User pi
+    PreferredAuthentications=password
+
+Host 192.168.0.17
+    User pi
+    PreferredAuthentications=password
+
+Host 192.168.0.18
+    User webuser
+    PreferredAuthentications=password
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+
+Host archibien_dev
+    User deployer
+    HostName archibien-preprod
+    IdentityFile ~/.ssh/id_rsa_ssdnodes_preprod
+
+IdentityFile ~/.ssh/id_rsa_github

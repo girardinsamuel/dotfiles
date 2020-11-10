@@ -4,16 +4,16 @@
 [alias]
 	l = log --oneline
 	s = status
-  cm = commit -m
-  co = checkout
-  br = branch
-  last = log -1 HEAD
-  mend = commit --amend --no-edit
-  a = add .
-  db = branch -D
-  nb = checkout -b
-  psu = push --set-upstream origin
-  stashes = stash list
+	cm = commit -m
+	co = checkout
+	br = branch
+	last = log -1 HEAD
+	mend = commit --amend --no-edit
+	a = add .
+	db = branch -D
+	nb = checkout -b
+	psu = push --set-upstream origin
+	stashes = stash list
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
