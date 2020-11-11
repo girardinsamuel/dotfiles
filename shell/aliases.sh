@@ -13,7 +13,7 @@ alias sgi_server="ssh -i '/Users/samuel/.ssh/id_rsa_sgi_server' deployer@209.182
 alias ip="curl icanhazip.com" # My public IP address
 alias dc="docker-compose"
 alias serve="python3 -m http.server"
-alias alias="nvim ~/.dotfiles/shell/aliases.sh"
+alias addalias="nvim ~/.dotfiles/shell/aliases.sh"
 alias s="spotify"
 alias tb="nc termbin.com 9999"
 alias n="nvim"
@@ -28,18 +28,22 @@ alias cc="echo '  Types of commits:
   * style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
   * test: Adding missing tests or correcting existing tests'"
 alias c="clear"
+alias g="git"
 alias gs="g s"
 
 # Js
 alias watch="npm run watch"
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias repos = "cd $HOME/repos"
+alias repos="cd $HOME/repos"
 
 # Improve coloration of common tools
 alias cat="bat"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias ls="exa"
+
+# cd to git root directory
+alias cdgr='cd "$(git root)"'
 
 # update dotfiles
 dfu() {
@@ -47,14 +51,6 @@ dfu() {
         cd ~/.dotfiles && git pull --ff-only && ./install -q
     )
 }
-
-# Use pip without requiring virtualenv
-# syspip() {
-#     PIP_REQUIRE_VIRTUALENV="" pip "$@"
-# }
-
-# cd to git root directory
-alias cdgr='cd "$(git root)"'
 
 # Create a directory and cd into it
 mcd() {
