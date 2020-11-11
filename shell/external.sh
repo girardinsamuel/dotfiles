@@ -12,7 +12,8 @@ export COOKIECUTTER_CONFIG=/Users/samuel/.cookiecutter.yaml
 
 # Configure pyenv
 eval "$(pyenv init -)"
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # TODO: verify if needed
 # add code command for VS Code
