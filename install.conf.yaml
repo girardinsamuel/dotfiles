@@ -1,14 +1,31 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
-    ~/.tmux.conf: tmux.conf
-    ~/.zshrc: zshrc
+    ~/.bash:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.dotfiles: ''
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    ~/.tmux.conf:
+    ~/.shell:
+    ~/.tmux.conf:
+    ~/.zsh:
+    ~/.zshrc:
+    ~/.macos:
 
+- create:
+    - ~/screenshots
 
+- brewfile:
+    file: Brewfile
+
+- shell:
+    - [chsh -s $(which zsh), Making zsh the default shell]
+    - [git submodule update --init --recursive, Installing submodules]
+    - [pyenv install 3.9.0, Installing latest python]

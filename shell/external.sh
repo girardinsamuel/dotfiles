@@ -1,3 +1,6 @@
+# Path to your dotfiles.
+export DOTFILES=$HOME/.dotfiles
+
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
 
@@ -8,7 +11,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 export COOKIECUTTER_CONFIG=/Users/samuel/.cookiecutter.yaml
 
 # Configure pyenv
-# TODO: verify if correct
 eval "$(pyenv init -)"
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 

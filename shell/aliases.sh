@@ -27,6 +27,19 @@ alias cc="echo '  Types of commits:
   * refactor: A code change that neither fixes a bug nor adds a feature
   * style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
   * test: Adding missing tests or correcting existing tests'"
+alias c="clear"
+alias gs="g s"
+
+# Js
+alias watch="npm run watch"
+# Directories
+alias dotfiles="cd $DOTFILES"
+alias repos = "cd $HOME/repos"
+
+# Improve coloration of common tools
+alias cat="bat"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+alias ls="exa"
 
 # update dotfiles
 dfu() {
