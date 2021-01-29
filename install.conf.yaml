@@ -22,6 +22,7 @@
     ~/.pypirc:
 
 - create:
+    - ~/.nvm
     - ~/screenshots
     - ~/repos
 

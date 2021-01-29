@@ -2,9 +2,38 @@ Host *
     AddKeysToAgent yes
     UseKeychain yes
 
-Host archibien_dev
+Host archibien.dev
     User deployer
-    HostName archibien-preprod
+    HostName 209.182.232.40
     IdentityFile ~/.ssh/id_rsa_ssdnodes_preprod
 
-IdentityFile ~/.ssh/id_rsa_github
+Host archibien.preprod
+    User deployer
+    HostName 46.101.51.246
+    IdentityFile ~/.ssh/id_rsa_do_archibien_app_preprod
+
+Host archibien.prod
+    User deployer
+    HostName 167.99.92.20
+    IdentityFile ~/.ssh/id_rsa_do_archibien_app
+
+Host archibien.site
+    User deployer
+    HostName 46.101.190.171
+    IdentityFile ~/.ssh/id_rsa_do_archibien_site
+
+Host archibien.blog
+    User deployer
+    HostName 46.101.80.147
+    IdentityFile ~/.ssh/id_rsa_digitalocean_latest
+
+Host github.com
+    User git
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa_github
+
+Host perso
+    User deployer
+    HostName 209.182.232.70
+    IdentityFile ~/.ssh/id_rsa_sgi_server
+

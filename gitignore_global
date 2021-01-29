@@ -30,7 +30,6 @@
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 .idea/
@@ -48,4 +47,3 @@ coverage.xml
 # Web development #
 ###################
 media
-static

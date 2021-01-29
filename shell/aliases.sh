@@ -1,14 +1,12 @@
 
+# Servers
 # Archibien
-alias archibien_app="ssh -i '/Users/samuel/.ssh/id_rsa_do_archibien_app' deployer@167.99.92.20"
-alias archibien_site="ssh -i '/Users/samuel/.ssh/id_rsa_do_archibien_site' deployer@46.101.190.171"
-alias archibien_dev="ssh -i /Users/samuel/.ssh/id_rsa_ssdnodes_preprod deployer@209.182.232.40"
-alias archibien_app_preprod="ssh -i '/Users/samuel/.ssh/archibien/id_rsa_do_archibien_app_preprod' deployer@46.101.51.246"
-alias archiservice="ssh root@archiservice.com"
+alias a.prod="ssh archibien.prod"
+alias a.site="ssh archibien.site"
+alias a.dev="ssh archibien.dev"
+alias a.preprod="ssh archibien.preprod"
+alias a.blog="ssh archibien.blog"
 alias archibien_s="export DJANGO_SETTINGS_MODULE=config.settings.local"
-
-# Perso
-alias sgi_server="ssh -i '/Users/samuel/.ssh/id_rsa_sgi_server' deployer@209.182.232.70"
 
 alias ip="curl icanhazip.com" # My public IP address
 alias dc="docker-compose"
