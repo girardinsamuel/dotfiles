@@ -18,29 +18,28 @@ brew 'httpie'
 brew 'hub'
 brew 'zlib' # Needed for Memcached
 brew 'bat'
-brew 'exa'
 brew 'exif'
 brew 'netcat'
 brew 'nmap'
 brew 'shpotify'
 brew 'wget'
 brew 'unrar'
+brew 'imagemagick'
 
 # Shell
 brew 'fzf'
-
-# Development
 brew 'neovim'
-brew 'git'
-brew 'pyenv'
-brew 'pyenv-virtualenv'
-brew 'pre-commit'
-brew 'imagemagick'
-brew 'nvm'
-brew 'redis'
 brew 'tldr'
 
+# Development
+brew 'git'
+brew 'pre-commit'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+
 # Development (web)
+brew 'redis'
+brew 'nvm'
 brew 'heroku/brew/heroku'
 brew 'nginx'
 brew 'postgresql'

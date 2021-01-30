@@ -47,7 +47,8 @@ plugins=(
   npm
   osx
   colored-man-pages
-  web-search
+  zsh-autosuggestions
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
