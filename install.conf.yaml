@@ -34,8 +34,8 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    # - [pyenv install 3.9.1, Installing 'latest' python]
-    # - [chsh -s $(which zsh), Making zsh the default shell]
+    - [pyenv install 3.9.1, Installing 'latest' python]
+    - [chsh -s $(which zsh), Making zsh the default shell]
     # - [$(brew --prefix)/opt/fzf/install, Installing fzf completion]
 
 # Setting up vscode:
