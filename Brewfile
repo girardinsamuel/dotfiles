@@ -35,6 +35,7 @@ brew 'git'
 brew 'pre-commit'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
+brew 'diff-so-fancy'
 
 # Development (web)
 brew 'redis'

@@ -1,8 +1,9 @@
-# Configuration files:
+# Configuration files
 
 Here are all my config files sync via dotbot.
 
 ## Overview
+
 - macOS
 - shell client: iTerm2
 - shell interpreter: zsh + oh-my-zsh (ease config)
@@ -30,3 +31,13 @@ cd dotfiles/
 
 Config files are auto symlinked so every changes in config files appears in this repository.
 To backup/sync, just commit the changes.
+
+## Additional manual configuration
+
+- Install FiraCode font (to use in VS Code) <https://github.com/tonsky/FiraCode>
+- Install VS Code theme
+
+```
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```

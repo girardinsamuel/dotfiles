@@ -44,7 +44,6 @@ HYPHEN_INSENSITIVE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  npm
   osx
   colored-man-pages
   zsh-autosuggestions
@@ -54,6 +53,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+SPACESHIP_NODE_SHOW="false"
+SPACESHIP_PYENV_PREFIX=""
+SPACESHIP_PYENV_COLOr="blue"
+SPACESHIP_VENV_SHOW="false"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
