@@ -1,12 +1,12 @@
 # Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
-tap 'homebrew/services'
+#tap 'homebrew/cask'
+#tap 'homebrew/cask-fonts'
+#tap 'homebrew/cask-versions'
+#tap 'homebrew/bundle'
+#tap 'homebrew/services'
 
-tap 'heroku/brew'
-tap 'elastic/tap'
+#tap 'heroku/brew'
+#tap 'elastic/tap'
 
 # Binaries
 brew 'bash' # Latest Bash version
@@ -23,7 +23,6 @@ brew 'netcat'
 brew 'nmap'
 brew 'shpotify'
 brew 'wget'
-brew 'unrar'
 brew 'imagemagick'
 
 # Shell

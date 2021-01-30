@@ -10,10 +10,14 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # Define global cookiecutter configuration
 export COOKIECUTTER_CONFIG=/Users/samuel/.cookiecutter.yaml
 
-# Configure pyenv
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+# Pyenv initialization
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+# TODO: check usage
+# eval "$(pyenv virtualenv-init -)" 
 # export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # Configure nvm
 export NVM_DIR=~/.nvm

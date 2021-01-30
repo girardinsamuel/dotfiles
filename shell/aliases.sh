@@ -44,6 +44,12 @@ alias cdgr='cd "$(git root)"'
 # reload shell config
 alias reloadshell="source $HOME/.zshrc"
 
+# database services
+alias runmysql=""
+alias runpostgres="pg_ctl -D /usr/local/var/postgres start"
+alias mysql="mysql -uroot"
+alias psql="psql -U craggeek -d postgres"
+
 # update dotfiles
 dfu() {
     (
