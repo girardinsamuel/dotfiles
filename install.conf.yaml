@@ -15,29 +15,28 @@
     ~/.tmux.conf:
     ~/.shell:
     ~/.tmux.conf:
-    ~/.zsh:
     ~/.zshrc:
-    ~/.p10k.zsh:
     ~/.macos:
     ~/.pypirc:
 
 - create:
     - ~/.nvm
     - ~/screenshots
-    - ~/repos
+    # - ~/repos
 
 # Homebrew
-- shell:
-    # install homebrew
-    - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"]
+# - shell:
+#     # install homebrew
+#     - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"]
+
 # install brew packages
-- brewfile:
-    file: Brewfile
+# - brewfile:
+#     file: Brewfile
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [pyenv install 3.8.5, Installing 'latest' python]
-    - [chsh -s $(which zsh), Making zsh the default shell]
+    # - [pyenv install 3.9.1, Installing 'latest' python]
+    # - [chsh -s $(which zsh), Making zsh the default shell]
     - [$(brew --prefix)/opt/fzf/install, Installing fzf completion]
 
 # Setting up vscode:

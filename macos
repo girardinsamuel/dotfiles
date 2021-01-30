@@ -26,15 +26,15 @@ defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
 
 # disable text correction
-defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
-defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
-defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
-defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
-defaults write -g NSAutomaticCapitalizationEnabled -bool false
+# defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+# defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+# defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+# defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
+# defaults write -g NSAutomaticCapitalizationEnabled -bool false
 
 # expand print panel by default
-defaults write -g PMPrintingExpandedStateForPrint -bool true
-defaults write -g PMPrintingExpandedStateForPrint2 -bool true
+# defaults write -g PMPrintingExpandedStateForPrint -bool true
+# defaults write -g PMPrintingExpandedStateForPrint2 -bool true
 
 # expand save panel by default
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
@@ -104,7 +104,7 @@ sudo systemsetup -setrestartfreeze on
 sudo pmset -a displaysleep 15
 
 # Disable machine sleep while charging
-sudo pmset -c sleep 0
+# sudo pmset -c sleep 0
 
 # Set machine sleep to 5 minutes on battery
 sudo pmset -b sleep 5

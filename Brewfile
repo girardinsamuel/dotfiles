@@ -27,9 +27,6 @@ brew 'wget'
 brew 'unrar'
 
 # Shell
-brew 'zsh'
-brew 'zsh-completions'
-brew 'romkatv/powerlevel10k/powerlevel10k'
 brew 'fzf'
 
 # Development
@@ -39,27 +36,21 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'pre-commit'
 brew 'imagemagick'
-brew 'mysql'
-brew 'postgresql'
-brew 'nginx'
 brew 'nvm'
 brew 'redis'
-brew 'gdal'
-brew 'lippq'
 brew 'tldr'
-brew 'heroku/brew/heroku'
 
-# Development (++)
+# Development (web)
+brew 'heroku/brew/heroku'
+brew 'nginx'
+brew 'postgresql'
+brew 'mysql'
+
+# Specifics
+brew 'gdal'
 brew 'postgis'
 
 # Apps
 cask 'discord'
-cask 'slack'
 cask 'microsoft-teams'
 cask 'spectacle'
-cask 'docker'
-cask 'firefox'
-cask 'brave-browser'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'whatsapp'

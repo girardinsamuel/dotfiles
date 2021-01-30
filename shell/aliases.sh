@@ -31,6 +31,7 @@ alias gs="g s"
 
 # Js
 alias watch="npm run watch"
+
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias repos="cd $HOME/repos"
@@ -42,6 +43,9 @@ alias ls="exa"
 
 # cd to git root directory
 alias cdgr='cd "$(git root)"'
+
+# reload shell config
+alias reloadshell="source $HOME/.zshrc"
 
 # update dotfiles
 dfu() {
