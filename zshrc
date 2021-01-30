@@ -43,9 +43,9 @@ HYPHEN_INSENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git,
-  npm,
-  osx,
+  git
+  npm
+  osx
   colored-man-pages
   web-search
 )

@@ -1,12 +1,10 @@
 
 # Servers
-# Archibien
 alias a.prod="ssh archibien.prod"
 alias a.site="ssh archibien.site"
 alias a.dev="ssh archibien.dev"
 alias a.preprod="ssh archibien.preprod"
 alias a.blog="ssh archibien.blog"
-alias archibien_s="export DJANGO_SETTINGS_MODULE=config.settings.local"
 
 alias ip="curl icanhazip.com" # My public IP address
 alias dc="docker-compose"
@@ -39,7 +37,6 @@ alias repos="cd $HOME/repos"
 # Improve coloration of common tools
 alias cat="bat"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-alias ls="exa"
 
 # cd to git root directory
 alias cdgr='cd "$(git root)"'
