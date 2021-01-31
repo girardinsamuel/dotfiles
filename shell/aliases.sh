@@ -42,7 +42,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias reloadshell="source $HOME/.zshrc"
 
 # database services
-alias runmysql=""
+alias runmysql="mysql.server start"
 alias runpostgres="pg_ctl -D /usr/local/var/postgres start"
 alias mysql="mysql -uroot"
 alias ppsql="psql -U craggeek -d postgres"

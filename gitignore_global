@@ -47,3 +47,10 @@ coverage.xml
 # Web development #
 ###################
 media
+*.sqlite3
+*.db
+
+# Python #
+###################
+.python-version
+
