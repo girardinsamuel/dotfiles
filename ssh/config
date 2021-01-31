@@ -1,6 +1,7 @@
 Host *
     AddKeysToAgent yes
     UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa_github
 
 Host archibien.dev
     User deployer
