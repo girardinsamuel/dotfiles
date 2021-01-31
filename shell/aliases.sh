@@ -38,9 +38,6 @@ alias repos="cd $HOME/repos"
 alias cat="bat"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-# cd to git root directory
-alias cdgr='cd "$(git root)"'
-
 # reload shell config
 alias reloadshell="source $HOME/.zshrc"
 
@@ -48,68 +45,4 @@ alias reloadshell="source $HOME/.zshrc"
 alias runmysql=""
 alias runpostgres="pg_ctl -D /usr/local/var/postgres start"
 alias mysql="mysql -uroot"
-alias psql="psql -U craggeek -d postgres"
-
-# update dotfiles
-dfu() {
-    (
-        cd ~/.dotfiles && git pull --ff-only && ./install -q
-    )
-}
-
-# Create a directory and cd into it
-mcd() {
-    mkdir "${1}" && cd "${1}"
-}
-
-# Go up [n] directories
-up()
-{
-    local cdir="$(pwd)"
-    if [[ "${1}" == "" ]]; then
-        cdir="$(dirname "${cdir}")"
-    elif ! [[ "${1}" =~ ^[0-9]+$ ]]; then
-        echo "Error: argument must be a number"
-    elif ! [[ "${1}" -gt "0" ]]; then
-        echo "Error: argument must be positive"
-    else
-        for ((i=0; i<${1}; i++)); do
-            local ncdir="$(dirname "${cdir}")"
-            if [[ "${cdir}" == "${ncdir}" ]]; then
-                break
-            else
-                cdir="${ncdir}"
-            fi
-        done
-    fi
-    cd "${cdir}"
-}
-
-# Fetch pull request
-fpr() {
-    if ! git rev-parse --git-dir > /dev/null 2>&1; then
-        echo "error: fpr must be executed from within a git repository"
-        return 1
-    fi
-    (
-        cdgr
-        if [ "$#" -eq 1 ]; then
-            local repo="${PWD##*/}"
-            local user="${1%%:*}"
-            local branch="${1#*:}"
-        elif [ "$#" -eq 2 ]; then
-            local repo="${PWD##*/}"
-            local user="${1}"
-            local branch="${2}"
-        elif [ "$#" -eq 3 ]; then
-            local repo="${1}"
-            local user="${2}"
-            local branch="${3}"
-        else
-            echo "Usage: fpr [repo] username branch"
-            return 1
-        fi
-
-        git fetch "git@github.com:${user}/${repo}" "${branch}:${user}/${branch}"
-    )
-}
+alias ppsql="psql -U craggeek -d postgres"

@@ -46,7 +46,7 @@ plugins=(
   git
   osx
   colored-man-pages
-  zsh-autosuggestions
+  # zsh-autosuggestions
   z
 )
 
