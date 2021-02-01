@@ -45,7 +45,7 @@ alias reloadshell="source $HOME/.zshrc"
 alias al="vim ~/.dotfiles/shell/aliases.sh"
 
 # sync settings quickly
-alias sync="cd ~/.dotfiles && g a && g cm "sync" && g push && cd -"
+alias sync="cd ~/.dotfiles && g a && g cm "sync" && g push && echo -e '\e[32mdotfiles synced\!' && cd -"
 
 # kill service running on given port
 alias kp3="lsof -i tcp:3000"
