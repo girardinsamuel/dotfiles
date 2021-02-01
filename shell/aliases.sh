@@ -41,6 +41,16 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # reload shell config
 alias reloadshell="source $HOME/.zshrc"
 
+# add alias quickly
+alias al="vim ~/.dotfiles/shell/aliases.sh"
+
+# sync settings quickly
+alias sync="cd ~/.dotfiles && g a && g cm "sync" && g push && cd -"
+
+# kill service running on given port
+alias kp3="lsof -i tcp:3000"
+alias kp8="lsof -i tcp:8000"
+
 # database services
 alias runmysql="mysql.server start"
 alias runpostgres="pg_ctl -D /usr/local/var/postgres start"
