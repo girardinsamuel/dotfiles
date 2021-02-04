@@ -1,0 +1,55 @@
+{
+  "workbench.colorTheme": "Night Owl",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontSize": 13,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "editor.tabCompletion": "on",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  // "editor.codeActionsOnSave": {
+  // },
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "window.zoomLevel": 1,
+  "editor.multiCursorModifier": "alt",
+  "editor.detectIndentation": true,
+  "[markdown]": {
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.snippetSuggestions": "none",
+  },
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.rulers": [
+      {
+        "column": 100,
+        "color": "#424142"
+      }
+    ]
+  },
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.associations": {
+    ".mail": "html"
+  },
+  "editor.rulers": [
+    100
+  ]
+}

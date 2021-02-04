@@ -42,7 +42,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 alias reloadshell="source $HOME/.zshrc"
 
 # add alias quickly
-alias al="vim ~/.dotfiles/shell/aliases.sh"
+alias al="nvim ~/.dotfiles/shell/aliases.sh"
 
 # sync settings quickly
 alias sync="cd ~/.dotfiles && g a && g cm "sync" && g push && echo -e '\e[32mdotfiles synced\!' && cd -"
@@ -56,3 +56,7 @@ alias runmysql="mysql.server start"
 alias runpostgres="pg_ctl -D /usr/local/var/postgres start"
 alias mysql="mysql -uroot"
 alias ppsql="psql -U craggeek -d postgres"
+
+# cache services
+alias mc="/usr/local/opt/memcached/bin/memcached"
+
