@@ -4,7 +4,6 @@
 #tap 'homebrew/cask-versions'
 #tap 'homebrew/bundle'
 #tap 'homebrew/services'
-
 #tap 'heroku/brew'
 #tap 'elastic/tap'
 

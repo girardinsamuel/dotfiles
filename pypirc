@@ -2,6 +2,8 @@
 index-servers =
   pypi
   testpypi
+  sam
+  devpi-stable
 
 [pypi]
   username = __token__
@@ -10,3 +12,12 @@ index-servers =
 [testpypi]
   username = __token__
   password =
+
+[devpi-stable]
+repository = http://localhost:3141/packages/stable/
+username = packages
+
+[sam]
+  repository = http://localhost:8080/
+  username = sam
+  password = sam

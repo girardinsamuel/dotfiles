@@ -8,7 +8,7 @@ export PIP_REQUIRE_VIRTUALENV=false
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 # Define global cookiecutter configuration
-export COOKIECUTTER_CONFIG=/Users/samuel/.cookiecutter.yaml
+export COOKIECUTTER_CONFIG=$HOME/.cookiecutter.yaml
 
 # Pyenv initialization
 if command -v pyenv 1>/dev/null 2>&1; then

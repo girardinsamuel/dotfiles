@@ -16,9 +16,11 @@
   "editor.formatOnSave": true,
   // "editor.codeActionsOnSave": {
   // },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "editor.minimap.enabled": false,
   "files.trimTrailingWhitespace": true,
-  "window.zoomLevel": 1,
   "editor.multiCursorModifier": "alt",
   "editor.detectIndentation": true,
   "[markdown]": {
@@ -51,5 +53,17 @@
   },
   "editor.rulers": [
     100
-  ]
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "python.formatting.provider": "black",
+  "eslint.format.enable": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "window.zoomLevel": 1
 }
